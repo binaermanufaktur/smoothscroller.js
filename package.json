@@ -1,0 +1,22 @@
+{
+  "name": "@binaermanufaktur/smoothscroller",
+  "version": "1.0.0",
+  "description": "A small plugin to provide smoothscrolling functionality across paths and per parameter in url",
+  "main": "smoothscroller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/binaermanufaktur/smoothscroller.js.git"
+  },
+  "keywords": [
+    "smoothscrolling"
+  ],
+  "author": "binaermanufaktur",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/binaermanufaktur/smoothscroller.js/issues"
+  },
+  "homepage": "https://github.com/binaermanufaktur/smoothscroller.js#readme"
+}
