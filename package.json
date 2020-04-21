@@ -1,6 +1,6 @@
 {
   "name": "@binaermanufaktur/smoothscroller",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A small plugin to provide smoothscrolling functionality across paths and per parameter in url",
   "main": "smoothscroller.js",
   "scripts": {
