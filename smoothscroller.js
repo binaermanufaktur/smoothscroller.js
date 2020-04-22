@@ -5,7 +5,7 @@ function Smoothscroller(identifier) {
     this.init = function () {
 
         //check for smoothScrollTarget query parameter in URL and scroll to it if present
-        let params = getParametersAndScrollToTarget();
+        var params = getParametersAndScrollToTarget();
 
         //check for scrollTarget in sessionStorage
         checkSessionstorageAndScrollToTarget();
@@ -22,7 +22,7 @@ function smoothScrollTo(scrollTarget) {
         console.log('no scrollTarget for smoothscroller');
         return;
     }
-    let target = document.getElementById(scrollTarget);
+    var target = document.getElementById(scrollTarget);
     if (!target) {
         console.log('target of smoothscroller does not exist');
         return;
@@ -31,11 +31,11 @@ function smoothScrollTo(scrollTarget) {
 }
 
 function getParametersAndScrollToTarget() {
-    let params = window.location.search;
-    let splitParams = params.split("&");
-    for (let i = 0; i < splitParams.length; i++) {
+    var params = window.location.search;
+    var splitParams = params.split("&");
+    for (var i = 0; i < splitParams.length; i++) {
         if (splitParams[i].includes("smoothScrollTarget")) {
-            let scrollTarget = splitParams[i].split("=").pop();
+            var scrollTarget = splitParams[i].split("=").pop();
             smoothScrollTo(scrollTarget);
             break;
         }
@@ -45,7 +45,7 @@ function getParametersAndScrollToTarget() {
 
 function checkSessionstorageAndScrollToTarget() {
     if (sessionStorage.getItem('smoothScrollTarget')) {
-        let scrollTarget = sessionStorage.getItem('smoothScrollTarget');
+        var scrollTarget = sessionStorage.getItem('smoothScrollTarget');
         sessionStorage.removeItem('smoothScrollTarget');
         smoothScrollTo(scrollTarget);
     }
@@ -54,11 +54,11 @@ function checkSessionstorageAndScrollToTarget() {
 function setEventListeners(params) {
     var smoothscrollers = document.querySelectorAll('.' + this.identifier);
     //add click listener to all smoothscroller links
-    for (let i = 0; i < smoothscrollers.length; i++) {
+    for (var i = 0; i < smoothscrollers.length; i++) {
         smoothscrollers[i].addEventListener("click", function (evt) {
             evt.preventDefault();
-            let scrollTarget = this.dataset.scrollTarget;
-            let path = this.dataset.scrollPath || "/";
+            var scrollTarget = this.dataset.scrollTarget;
+            var path = this.dataset.scrollPath || "/";
             if (path === window.location.pathname) {
 
                 smoothScrollTo(scrollTarget);
