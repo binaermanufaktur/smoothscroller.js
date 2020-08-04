@@ -10,7 +10,8 @@ Edit the JS script you want to include smoothscroller on:
 ```js
 // my-app.js
 import {Smoothscroller} from 'path/to/smoothscroller';
-const smoothscroller = new Smoothscroller();
+const smoothscroller = new Smoothscroller('identifier');
+/* paramter is optional CSS identifier. defaults to "smoothscroller" */
 smoothscroller.init();
 ```
 
