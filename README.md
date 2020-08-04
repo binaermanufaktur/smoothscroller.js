@@ -22,5 +22,10 @@ In your HTML markup you can now use the class "smoothscroller" with "data-scroll
     data-scroll-target="sampleID" 
     data-scroll-path="/path/to/target/">sampleAnchor</a>
 ```
-Use smoothscroller with a URL parameter as such:  
-`` http://www.yoursite.com/path/to/target?smoothScrollTarget=SampleID``
+
+
+Use url parameters to deeplink with smoothscroll effect to target ID as follows:
+```
+www.yourdomain.com/path/to/target/?smoothScrollTarget=yourTargetID
+```
+
