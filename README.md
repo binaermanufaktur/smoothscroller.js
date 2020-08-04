@@ -1,6 +1,10 @@
 ## smoothscroller.js
 
 Clone smoothscroller to your project.  
+Or use npm:  
+```sh
+$ npm i @binaermanufaktur/smoothscroller
+```
 Edit the JS script you want to include smoothscroller on:
 
 ```js
